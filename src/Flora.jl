@@ -1,5 +1,12 @@
+try Pkg.installed("Revise")
+    using Revise
+end
+
+__precompile__(true)
+
 module Flora
 
-# package code goes here
+include("mlp.jl")
+include("rnn.jl")
 
-end # module
+end # module Flora
